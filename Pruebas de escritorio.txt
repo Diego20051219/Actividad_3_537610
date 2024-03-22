@@ -1,0 +1,57 @@
+Prueba 1 :
+
+- Bienvenidos al programa de frecuencia de señal
+
+- Ingrese la frecuencia de la señal: 50
+
+- Como la probabilidad acumulada es mejor 0.3 
+
+- la señal se bloquea por el filtro
+
+Prueba 2 :
+
+- Bienvenidos al programa de frecuencia de señal
+
+- Ingrese la frecuencia de la señal: 10.698
+
+- Como la probabilidad acumulada es mejor 0.3 
+
+- la señal se bloquea por el filtro
+
+
+Prueba 3 :
+
+- Bienvenidos al programa de frecuencia de señal
+
+- Ingrese la frecuencia de la señal: -250
+
+- Como la probabilidad acumulada es mejor 0.3 
+
+- la señal se bloquea por el filtro
+
+
+Prueba 4 :
+
+- Bienvenidos al programa de frecuencia de señal
+
+- Ingrese la frecuencia de la señal: 845
+
+- Como la probabilidad acumulada es mayor 0.3 
+
+- la señal pasa por el filtro
+
+
+-Pregunta :
+
+ ¿para qué valor de frecuencia la señal deja de ser bloqueada?
+ 
+ // Cuando es 843 Hz para arriba desbloquea
+
+// Cuando es 842 HZ para abajo se bloquea
+ 
+
+ 
+
+ 
+
+ 

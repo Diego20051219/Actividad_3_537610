@@ -1,0 +1,31 @@
+Problema: Filtar señales utilizando la funcion de probabilidad de la campana de Gauss.
+
+Utlizaremos la funcion de densidad de probabilidad de la campana de Gauss y la funcion de distribucion acumulada
+
+Variables: Frecuencia,Prob_acumulada,exponente,denominador,f_x
+
+Constantes:
+- Media = 1000
+- Desviacion = 300
+- h = 1/2
+
+Entrada(s): La frecuencia de la señal.
+
+Salida(s): Mensaje indicando si la señal pasa o es bloqueada por el filtro.
+
+otros:liberias de python 
+
+proceso(s): 
+-El algoritmo recibe como entrada la frecuencia de una señal(colocar un input)
+
+-se guardara la frecuencia de una señal en la varible frecuancia 
+
+-Incia restando la frecuancia con la media y resolviendo el cuadrado y dividiendola con desviacion al cuadrado y se guarda en la variable exponente.
+
+-despues multiplica la desviacion por la raiz cuadrada de dos pi y se guarda en la variable exponente.
+
+-Despues se divide uno sobre denominador por euler -h por el exponente y se guarda en la variable f_x
+
+-stats.norm: Esta parte se refiere al módulo norm dentro de la biblioteca scipy.stats. norm es una abreviatura de "normal", lo que indica que estamos trabajando con la distribución normalcdf(): cdf significa "función de distribución acumulada" (CDF). Esta función calcula la probabilidad acumulada de que una variable aleatoria siga una distribución normal y sea menor o igual a la frecuencia.
+
+- si la prob_acumulada > 0.3 mostrara un mensaje diciendo que la señal pasa por el filtro y si no aparacera un mensaje diciendo que la señal se bloquea por el filtro.
