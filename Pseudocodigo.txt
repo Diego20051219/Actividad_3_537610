@@ -1,0 +1,50 @@
+program calcular_fitrado_señales
+
+ // Programa para calcular si la frecuencia pasa o no por el filtro
+
+  start
+
+
+   // Declarar variables y constantes
+
+   Declare real frecuencia  // Donde se guardara el valor ingresado por el usuario
+    
+   Declare real prob_acumulada
+   
+   declare int i
+
+   Declare const MEDIA = 1000  
+
+   Declare const DESVIACION = 300
+
+   
+
+
+   // Mostrar una bienvenida al usurio y un input para su que ingrese su valor
+
+   Display "Bienvenidos al programa de frecuencia de señal"
+
+   Display "ingrese la frecuencia de la señal: "
+
+   
+   // Ciclo for para iterar desde 0 hasta la variable frecuencia
+
+     f_x = 1 / (desviacion * sqrt(2 * pi)) * exp(-((i - media) ** 2) / (2 * desviacion ** 2))  
+
+   prob_acumulada += f_x
+
+   
+   // se evaluara si el porcentaje es mayor 0.3 para pasar por el filtro
+
+   If prob_acumulada > 0.3:
+
+       print("la señal pasa por el filtro") // si es suficiente aparecera este mensaje 
+
+    Else:
+
+       print("la señal se bloquea por el filtro") // si no es suficiente aparecera este mensaje
+
+   End If
+   
+  
+  end 
